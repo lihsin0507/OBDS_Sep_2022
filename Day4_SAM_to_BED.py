@@ -77,6 +77,7 @@ def output_as_fragments(bed): #function to give coordinates instead of reads
                         bed.write(f'{chr}\t{start}\t{end}\t{name}\t{score}\t{strand}\n')
 
 
+                        
                
 if args.gzip==True:
     with gzip.open(args.outfile, mode="wt") as bed:
